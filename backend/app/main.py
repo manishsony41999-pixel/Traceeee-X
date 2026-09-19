@@ -129,3 +129,21 @@ async def health_check():
         "ai_provider": settings.AI_PROVIDER,
         "demo_mode": settings.USE_DEMO_INTELLIGENCE
     }
+# Serve React frontend in production
+FRONTEND_DIR = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+
+if FRONTEND_DIR.exists():
+    app.mount(
+        "/assets",
+        StaticFiles(directory=FRONTEND_DIR / "assets"),
+        name="assets"
+    )
+
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        file_path = FRONTEND_DIR / full_path
+
+        if file_path.is_file():
+            return FileResponse(file_path)
+
+        return FileResponse(FRONTEND_DIR / "index.html")
