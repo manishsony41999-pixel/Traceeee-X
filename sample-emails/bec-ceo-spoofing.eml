@@ -1,0 +1,45 @@
+Delivered-To: cfo@corporation.com
+Received: by 2002:a17:906:7890 with SMTP id bec123;
+        Mon, 16 Sep 2024 09:32:15 -0500 (CDT)
+Received: from unknown-host-192-168-1-45.dynamic.isp.com (unknown [192.168.1.45])
+        by mx.google.com with SMTP id spoof789;
+        Mon, 16 Sep 2024 09:32:12 -0500 (CDT)
+Received-SPF: fail (google.com: domain of ceo@corporation-secure.com does not designate 192.168.1.45 as permitted sender) client-ip=192.168.1.45;
+Authentication-Results: mx.google.com;
+       dkim=none;
+       spf=fail smtp.mailfrom=ceo@corporation-secure.com;
+       dmarc=fail (p=REJECT) header.from=corporation.com
+Message-ID: <urgent-wire-20240916@freemail.example.com>
+Date: Mon, 16 Sep 2024 14:30:00 +0000
+From: "Robert Williams - CEO" <ceo@corporation.com>
+Reply-To: <robert.w.temp@freemail-service.com>
+To: <cfo@corporation.com>
+Subject: URGENT: Confidential Wire Transfer - Time Sensitive Acquisition
+X-Priority: 1
+Importance: high
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Sarah,
+
+I'm in the final stages of closing a confidential acquisition deal. This must remain completely confidential - do not discuss with anyone on the board until I give approval.
+
+Our legal counsel has prepared the escrow account for the first payment tranche. I need you to execute the following wire transfer by 3 PM today (before the Hong Kong market closes):
+
+Wire Transfer Instructions:
+Amount: $475,000 USD
+Beneficiary: HK Strategic Acquisitions Ltd
+Bank: First International Bank HK
+Account: 8834-9921-4455-2211
+SWIFT: HKFIBHK001
+Reference: PROJECT PHOENIX ESCROW
+
+This is time-critical. I'm in back-to-back meetings with the acquisition team and external counsel all day. Send confirmation once the wire is complete to my personal email: robert.w.temp@freemail-service.com
+
+Do not use my corporate email for this matter until the deal closes.
+
+Thanks for handling this urgently.
+
+Robert Williams
+CEO, Corporation Inc.
+Sent from my iPhone

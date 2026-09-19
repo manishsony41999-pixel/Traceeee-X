@@ -1,0 +1,39 @@
+Delivered-To: employee@acme-corp.com
+Received: by 2002:a05:6001:1234 with SMTP id abc123;
+        Thu, 19 Sep 2024 08:45:32 -0700 (PDT)
+Received: from mail-smtp.acme-corp.com (mail.acme-corp.com [203.0.113.5])
+        by mx.google.com with ESMTPS id def456;
+        Thu, 19 Sep 2024 08:45:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ceo@acme-corp.com designates 203.0.113.5 as permitted sender) client-ip=203.0.113.5;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@acme-corp.com;
+       spf=pass smtp.mailfrom=ceo@acme-corp.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE) header.from=acme-corp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=acme-corp.com; s=default;
+        h=from:to:subject:date:message-id;
+        bh=sampleBodyHash123456789=;
+        b=validDKIMSignatureHere123456789=
+Message-ID: <20240919084530.12345@acme-corp.com>
+Date: Thu, 19 Sep 2024 08:45:00 -0700
+From: "John Smith - CEO" <ceo@acme-corp.com>
+To: <employee@acme-corp.com>
+Subject: Q3 Project Update and Team Meeting Schedule
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Just a quick update on Q3 deliverables. The executive team is pleased with the progress on the digital transformation initiative.
+
+I've scheduled a project review meeting for next Tuesday at 2 PM in Conference Room B. Please review the attached slide deck before the meeting and come prepared with your team's progress update.
+
+Looking forward to our discussion.
+
+Best regards,
+John Smith
+Chief Executive Officer
+ACME Corporation
+
+P: +1-555-0123 | E: ceo@acme-corp.com

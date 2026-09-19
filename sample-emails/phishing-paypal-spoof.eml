@@ -1,0 +1,71 @@
+Delivered-To: victim@corporation.com
+Received: by 2002:a05:6512:1234 with SMTP id abc123456789;
+        Wed, 18 Sep 2024 10:21:04 -0700 (PDT)
+X-Received: by 2002:a17:902:abcd with SMTP id def987654321;
+        Wed, 18 Sep 2024 10:21:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726679264; cv=none;
+        d=google.com; s=arc-2024;
+        b=sample_arc_seal
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=fail header.i=@paypal.com;
+       spf=fail (google.com: domain of support@paypa1-security.com does not designate 185.220.101.5 as permitted sender) smtp.mailfrom=support@paypa1-security.com;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=paypal.com
+Received-SPF: fail (google.com: domain of support@paypa1-security.com does not designate 185.220.101.5 as permitted sender) client-ip=185.220.101.5;
+Authentication-Results: mx.google.com;
+       dkim=fail (bad signature) header.i=@paypal.com;
+       spf=fail (google.com: domain of support@paypa1-security.com does not designate 185.220.101.5 as permitted sender) smtp.mailfrom=support@paypa1-security.com;
+       dmarc=fail (p=REJECT sp=REJECT) header.from=paypal.com
+Received: from mail.suspicious-relay.org (mail.suspicious-relay.org [185.220.101.5])
+        by mx.google.com with ESMTPS id xyz123
+        for <victim@corporation.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384);
+        Wed, 18 Sep 2024 10:21:02 -0700 (PDT)
+Message-ID: <unusual-id-998273612@suspicious-relay.org>
+Date: Wed, 18 Sep 2024 17:21:00 +0000
+From: "PayPal Security Center" <service@paypal.com>
+Reply-To: "Account Verification Desk" <verify@paypa1-security.com>
+To: <victim@corporation.com>
+Subject: URGENT: Your PayPal Account Has Been Suspended - Action Required
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_001D_01D9E71F.9E3E5B10"
+
+------=_NextPart_000_001D_01D9E71F.9E3E5B10
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+We detected unusual activity on your PayPal account from an unrecognized device. Your account access has been temporarily suspended to protect your funds.
+
+You must confirm your identity and verify your account within 24 hours, or your account will be permanently closed.
+
+Please verify your identity immediately by visiting our secure portal:
+http://185.220.101.5/login-verification?token=9283748293
+
+Thank you for your immediate cooperation.
+
+PayPal Security Team
+
+------=_NextPart_000_001D_01D9E71F.9E3E5B10
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head><title>PayPal Account Notice</title></head>
+<body>
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h2 style="color: #003087;">PayPal Account Suspension Notice</h2>
+    <p>Dear Customer,</p>
+    <p>We detected unusual activity on your PayPal account. As a security precaution, we have temporarily limited your account features.</p>
+    <p style="color: red; font-weight: bold;">Immediate action required within 24 hours.</p>
+    <p>To restore your account and verify your identity, please click the secure link below:</p>
+    <p style="text-align: center; margin: 30px 0;">
+        <a href="http://185.220.101.5/login-verification?token=9283748293" style="background-color: #0070ba; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Verify Account Now</a>
+    </p>
+    <p>You can also check your billing status at: <a href="http://tinyurl.com/paypa1-renew-bill">http://tinyurl.com/paypa1-renew-bill</a></p>
+    <p style="font-size: 12px; color: #666;">This email was sent by PayPal Automated Security. Please do not reply directly to this message.</p>
+</div>
+</body>
+</html>
+------=_NextPart_000_001D_01D9E71F.9E3E5B10--
